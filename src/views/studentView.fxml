@@ -34,7 +34,7 @@
         </rowConstraints>
          <children>
             <Label text="Favourite activities" />
-            <ListView fx:id="favouriteActivitiesLabel" prefHeight="154.0" prefWidth="259.0" GridPane.columnIndex="1" />
+            <ListView fx:id="favouriteActivitiesList" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
          </children>
       </GridPane>
    </children>
