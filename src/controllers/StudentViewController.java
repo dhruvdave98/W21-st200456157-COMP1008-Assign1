@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import models.Student;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -23,9 +24,11 @@ public class StudentViewController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        firstNameLabel.setText("Dhruv");
-        lastNameLabel.setText("Dave");
-        studentNumberLabel.setText("200456157");
+        Student obj = new Student("Dhruv","Dave",200456157);
+
+        firstNameLabel.setText(obj.getFirstName());
+        lastNameLabel.setText(obj.getLastName());
+        studentNumberLabel.setText(Integer.toString(obj.getStudentNumber()));
         favouriteActivitiesList.getItems().addAll("Travelling","Music","Computer Gaming","Watching movies");
     }
 }
