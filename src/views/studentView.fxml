@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.StudentViewController">
@@ -37,5 +38,6 @@
             <ListView fx:id="favouriteActivitiesList" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" />
          </children>
       </GridPane>
+      <ImageView fx:id="studentImageView" fitHeight="241.0" fitWidth="271.0" layoutX="11.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true" />
    </children>
 </AnchorPane>
